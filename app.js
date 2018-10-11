@@ -16,7 +16,7 @@ function nextMove(square) {
     square.textContent = document.turn;
     switchTurn();
   } else {
-    document.getElementById('message').textContent = "Pick another square." + " " + document.getElementById('message').textContent;
+    document.getElementById('message').textContent = "Pick another square. " + document.turn + " goes next.";
   }
 }
 
@@ -64,8 +64,8 @@ function getBox(number) {
   return document.getElementById("s" + number).textContent;
 }
 
-function clearBox(number) {
-  for (let i = 1; i < 10; i+=1) {
+function clearBox() {
+  for (let i = 1; i < 10; i++) {
     document.getElementById("s" + i).textContent = "";
   }
 
