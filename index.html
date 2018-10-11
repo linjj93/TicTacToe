@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Mali|Roboto+Condensed');
+
+      body {
+        width: 550px;
+        margin: auto;
+        background-color: #EAF2EF;
+      }
+
+      h1 {
+        border-bottom: 1px solid black;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+
+      .square {
+        height: 80px;
+        width: 80px;
+        font-size: 40pt;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Coming Soon', cursive;
+      }
+
+      #message {
+        font-size: 18pt;
+        font-family: 'Mali', cursive;
+      }
+
+      }
+    </style>
+  </head>
+  <body onload = "startGame();">
+    <h1>Tic Tac Toe in JAVASCRIPT</h1>
+    <div id = "message">place message here</div>
+    <table border = "1">
+      <tr>
+        <td id = "s1"class = "square" onClick = "nextMove(this)"></td>
+        <td id = "s2"class = "square" onClick = "nextMove(this)" ></td>
+        <td id = "s3"class = "square" onClick = "nextMove(this)"></td>
+      </tr>
+      <tr>
+        <td id = "s4"class = "square" onClick = "nextMove(this)"></td>
+        <td id = "s5"class = "square" onClick = "nextMove(this)"></td>
+        <td id = "s6"class = "square" onClick = "nextMove(this)"></td>
+      </tr>
+      <tr>
+        <td id = "s7"class = "square" onClick = "nextMove(this)"></td>
+        <td id = "s8"class = "square" onClick = "nextMove(this)"></td>
+        <td id = "s9"class = "square" onClick = "nextMove(this)"></td>
+      </tr>
+    </table>
+    <a href = "javascript: startGame();">Start over.</a>
+    <script src = "app.js"></script>
+  </body>
+</html>
